@@ -27,8 +27,8 @@ def Bin(n):
 def Dec(b):
     ret = 0
 
-    for i in range(len(b)):
-        ret += b[i] * 2**( len(b) - i - 1 )
+    for i in range(1, len(b) + 1):
+        ret += b[i] * 2**( len(b) - i )
 
     return ret
 
